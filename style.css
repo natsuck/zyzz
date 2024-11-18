@@ -32,7 +32,7 @@ h2 {
 
 .btn-group {
     margin-top: 50px;
-    position: relative;
+    position: relative; /* Ensure this is set for .no-btn positioning */
     height: 40px;
 }
 
@@ -55,7 +55,7 @@ button.yes-btn {
 button.no-btn {
     background: white;
     color: #e94d58;
-    position: absolute;
+    position: absolute; /* This allows it to move dynamically */
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /* Centers it initially */
 }
