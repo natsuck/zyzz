@@ -19,9 +19,12 @@ noBtn.addEventListener("mouseover", () => {
   const maxX = wrapperRect.width - noBtnRect.width;
   const maxY = wrapperRect.height - noBtnRect.height;
 
+  // Generate random coordinates within the allowed range
   const randomX = Math.floor(Math.random() * maxX);
   const randomY = Math.floor(Math.random() * maxY);
 
+  // Apply the calculated position (assuming position is absolute)
+  noBtn.style.position = "absolute"; // Ensure position is set to absolute
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
 });
